@@ -16,7 +16,7 @@ describe('multipass', function() {
         assert.equal(e.message, 'Invalid API key');
       }
     });
-
+   
     it('should throw an error if API key is an empty string', function() {
       try {
         var multipass = new Multipass('');
@@ -86,7 +86,7 @@ describe('multipass', function() {
       var obj = multipass.decode(TOKEN);
       assert.deepEqual(obj, OBJ);
     });
-
+  
   });
 
 });
